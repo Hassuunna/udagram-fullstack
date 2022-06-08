@@ -15,8 +15,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) {
   }
-  
-  static handleError(error: Error){
+
+  static handleError(error: Error) {
     alert(error.message);
   }
 
