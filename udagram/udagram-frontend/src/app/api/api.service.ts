@@ -4,7 +4,6 @@ import { environment } from '../../environments/environment';
 import { map } from 'rxjs/operators';
 
 const API_HOST = environment.apiHost;
-
 @Injectable({
   providedIn: 'root'
 })
@@ -12,13 +11,12 @@ export class ApiService {
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
-
   token: string;
 
   constructor(private http: HttpClient) {
   }
-
-  static handleError(error: Error) {
+  
+  static handleError(error: Error){
     alert(error.message);
   }
 

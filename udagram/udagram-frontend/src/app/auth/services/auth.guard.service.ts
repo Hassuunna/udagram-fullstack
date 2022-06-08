@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class AuthGuardService implements CanActivate {
 
   constructor(
-    private auth: AuthService,
+    public auth: AuthService,
     private router: Router
     ) {}
 

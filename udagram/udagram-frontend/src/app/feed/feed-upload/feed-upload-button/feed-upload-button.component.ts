@@ -14,7 +14,7 @@ export class FeedUploadButtonComponent implements OnInit, OnDestroy {
   isLoggedIn: boolean;
   loginSub: Subscription;
 
-  constructor(private modalController: ModalController, private auth: AuthService) { }
+  constructor(private modalController: ModalController, public auth: AuthService) { }
 
   ngOnInit() {
     this.auth.currentUser$.subscribe((user) => {
