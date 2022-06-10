@@ -66,11 +66,13 @@ jobs:
             npm run frontend:install
             npm run api:install
 
+      - run:
           name: Build App
           command: |
             npm run frontend:build
             npm run api:build 
 
+      - run:
           name: Deploy App
           command: |
             echo "# TODO: Install, build, deploy in both apps"
