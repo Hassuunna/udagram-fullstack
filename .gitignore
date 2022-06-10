@@ -37,3 +37,5 @@ udagram/udagram-api/venv/
 udagram/udagram-api/.env
 
 udagram/udagram/front-end/node_modules
+
+udagram/set_env.sh
